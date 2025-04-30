@@ -79,7 +79,9 @@ architecture STRUCTURE of design_1_wrapper is
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC
+    FIXED_IO_ps_porb : inout STD_LOGIC;
+    axi_str_rxd_tready_0 : out STD_LOGIC;
+    axi_str_rxd_tlast_0 : in STD_LOGIC
   );
   end component design_1;
   component IOBUF is
@@ -144,7 +146,9 @@ design_1_i: component design_1
       lrck => lrck,
       mclk => mclk,
       sdata => sdata,
-      clk125=>clk125
+      clk125=> clk125,
+      axi_str_rxd_tready_0 => open,
+    axi_str_rxd_tlast_0 => '1'
     );
     
 ac_muten <= '1';    

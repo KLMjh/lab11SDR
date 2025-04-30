@@ -215,6 +215,8 @@ signal DDS_reset_pre : std_logic;
         
         signal stg1_tval_out_real : std_logic;
         signal stg1_tval_out_imag : std_logic;
+        signal stg2_tval_out_real : std_logic;
+        signal stg2_tval_out_imag : std_logic;
         signal dds_tval_out : std_logic;
 
 begin
@@ -505,7 +507,7 @@ begin
     
 	m_axis_tdata <= (filterChainOutReal(36 downto 21) & filterChainOutReal(36 downto 21));
 
-    m_axis_tvalid <= '1';
+    m_axis_tvalid <= stg2_tval_out_real when slv_reg2(3) = '1' else '0';
     
     dds_0 : dds_compiler_0
           PORT MAP (
@@ -543,7 +545,7 @@ begin
             s_axis_data_tvalid => stg1_tval_out_real,
             s_axis_data_tready => open,
             s_axis_data_tdata => filterChainMidReal(36 downto 21),
-            m_axis_data_tvalid => open,
+            m_axis_data_tvalid => stg2_tval_out_real,
             m_axis_data_tdata => filterChainOutReal
           );
           
@@ -563,7 +565,7 @@ begin
             s_axis_data_tvalid => stg1_tval_out_imag,
             s_axis_data_tready => open,
             s_axis_data_tdata => filterChainMidImag(36 downto 21),
-            m_axis_data_tvalid => open,
+            m_axis_data_tvalid => stg2_tval_out_imag,
             m_axis_data_tdata => filterChainOutImag
           );
           

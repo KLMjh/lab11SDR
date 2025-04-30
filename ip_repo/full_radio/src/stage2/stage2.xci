@@ -5,7 +5,7 @@
     "cell_name": "full_radio_v1_0_S00_AXI_inst/instStage2Real",
     "component_reference": "xilinx.com:ip:fir_compiler:7.2",
     "ip_revision": "23",
-    "gen_directory": "../../../../vivado/radio_periph_lab.tmp/full_radio_liao_v1_0_project/full_radio_Liao_v1_0_project.gen/sources_1/ip/stage2",
+    "gen_directory": "../../../../../../lab11/soclab10/vivado/radio_periph_lab.tmp/full_radio_liao_v1_0_project/full_radio_Liao_v1_0_project.gen/sources_1/ip/stage2",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "stage2", "resolve_type": "user", "usage": "all" } ],
@@ -179,7 +179,7 @@
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
         "IPREVISION": [ { "value": "23" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../vivado/radio_periph_lab.tmp/full_radio_liao_v1_0_project/full_radio_Liao_v1_0_project.gen/sources_1/ip/stage2" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../lab11/soclab10/vivado/radio_periph_lab.tmp/full_radio_liao_v1_0_project/full_radio_Liao_v1_0_project.gen/sources_1/ip/stage2" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
         "SWVERSION": [ { "value": "2024.2.1" } ],

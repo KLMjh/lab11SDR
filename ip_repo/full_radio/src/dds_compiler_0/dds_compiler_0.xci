@@ -5,7 +5,7 @@
     "cell_name": "full_radio_v1_0_S00_AXI_inst/dds_0",
     "component_reference": "xilinx.com:ip:dds_compiler:6.0",
     "ip_revision": "26",
-    "gen_directory": "../../../../vivado/radio_periph_lab.tmp/full_radio_liao_v1_0_project/full_radio_Liao_v1_0_project.gen/sources_1/ip/dds_compiler_0",
+    "gen_directory": "../../../../../../lab11/soclab10/vivado/radio_periph_lab.tmp/full_radio_liao_v1_0_project/full_radio_Liao_v1_0_project.gen/sources_1/ip/dds_compiler_0",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "dds_compiler_0", "resolve_type": "user", "usage": "all" } ],
@@ -180,7 +180,7 @@
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
         "IPREVISION": [ { "value": "26" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../vivado/radio_periph_lab.tmp/full_radio_liao_v1_0_project/full_radio_Liao_v1_0_project.gen/sources_1/ip/dds_compiler_0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../lab11/soclab10/vivado/radio_periph_lab.tmp/full_radio_liao_v1_0_project/full_radio_Liao_v1_0_project.gen/sources_1/ip/dds_compiler_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
         "SWVERSION": [ { "value": "2024.2" } ],
